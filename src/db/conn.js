@@ -1,10 +1,6 @@
 const mongoose=require("mongoose");
-
-mongoose.connect("mongodb://localhost:27017/technovate",{
-    // useCreateIndex:true,
-    // useNewUrlParser:true,
-    // useUnifiedTopology:true
-}).then(()=>{
+const DB='mongodb+srv://shyamkinjarapu9103:VuQ12qHa83S0bi4e@technovate.ybbuleb.mongodb.net/';
+mongoose.connect(DB,{}).then(()=>{
     console.log("connection successful");
 }).catch((error)=>{
     console.log(error);
